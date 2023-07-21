@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Home Page</title>
+  <link rel="stylesheet" href="styles_profile.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async
+    defer></script>
+</head>
+
+<body>
+  <div class="tabs-container">
+    <div class="tabs">
+      <button class="tab-button active" data-tab="profile-tab">Profile</button>
+      <button class="tab-button" data-tab="posts-tab">Posts</button>
+      <button class="tab-button" data-tab="gallery-tab">Gallery</button>
+      <button class="tab-button" data-tab="todo-tab">Todo</button>
+    </div>
+    <div class="tab-content-container">
+      <div class="tab-content active" id="profile-tab">
+        <h2>
+          User Profile
+          <div class="dropdown">
+            <button id="dropdownButton">Show Dropdown</button>
+            <div id="dropdownContent">
+              <ul>
+                <li id="item1">itemm1</li>
+                <li id="item2">Item 2</li>
+                <li><button id="signout-button">Sign Out</button></li>
+              </ul>
+            </div>
+          </div>
+        </h2>
+        <hr>
+        <div class="user-profile">
+          <div>
+            <img id="user-image" src="" alt="User Image">
+            <p><strong><span id="name"></span></strong></p>
+
+            <table class="basic-details-table">
+              <tr>
+                <td><strong>Username:</strong></td>
+                <td><span id="username"></span></td>
+              </tr>
+              <tr>
+                <td><strong>Email:</strong></td>
+                <td><span id="email"></span></td>
+              </tr>
+              <tr>
+                <td><strong>Phone:</strong></td>
+                <td><span id="phone"></span></td>
+              </tr>
+              <tr>
+                <td><strong>Website:</strong></td>
+                <td><span id="website"></span></td>
+              </tr>
+              </tr>
+            </table>
+            <div class="half-horizontal-line"></div>
+            <p id="company"><strong>Company</strong></p>
+            <table class="company-details-table">
+              <tr>
+                <td><strong>Name:</strong></td>
+                <td><span id="company-name"></span></td>
+              </tr>
+              <tr>
+                <td><strong>Catchphrase:</strong></td>
+                <td><span id="company-catchphrase"></span></td>
+              </tr>
+              <tr>
+                <td><strong>bs:</strong></td>
+                <td><span id="company-bs"></span></td>
+              </tr>
+              <!-- Add more rows as needed for other company details -->
+            </table>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="user-details">
+            <p><strong>Address</strong></p>
+
+            <p><strong>Address Street:</strong> <span id="address-street"></span></p>
+            <p><strong>Address Suite:</strong> <span id="address-suite"></span></p>
+            <p><strong>Address City:</strong> <span id="address-city"></span></p>
+            <p><strong>Address Zipcode:</strong> <span id="address-zipcode"></span></p>
+            <p><strong>Latitude:</strong> <span id="address-geo-lat"></span></p>
+            <p><strong>Longitude:</strong> <span id="address-geo-lng"></span></p>
+            <p><strong>maps</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="posts-tab">
+        <h2>User Posts (Coming Soon)</h2>
+      </div>
+      <div class="tab-content" id="gallery-tab">
+        <h2>User Gallery (Coming Soon)</h2>
+      </div>
+      <div class="tab-content" id="todo-tab">
+        <h2>User Todo (Coming Soon)</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="script_for_profile.js"></script>
+</body>
+
+</html>
